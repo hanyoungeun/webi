@@ -1,0 +1,140 @@
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.nav-link {
+    margin-right: 80px;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+}
+
+.g-col-4 {
+    float: left;
+    margin-right: 40px;
+    margin-left: 10px;
+}
+
+.clear {
+    clear: both;
+}
+
+.btn1 {
+    background-color: #BEBEBE;
+    border: none;
+    color: white;
+    width: 125px;
+    height: 30px;
+    line-height: 10px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.btn_click{
+        background-color: #2F2F2F;
+        width: 125px;
+        height: 30px;
+        line-height: 10px;
+        border-radius: 20px;
+        font-size: 14px;
+        color: white;
+}
+
+.btn2 {
+    padding: 5px 20px;
+    border: none;
+    margin-right: 10px;
+    border-radius: 20px;
+    background-color: #BEBEBE;
+    color: white;
+    font-size: 14px;
+}
+
+.btn2_click {
+    padding: 5px 20px;
+    border: none;
+    margin-right: 10px;
+    border-radius: 20px;
+    background-color: #7C7C7C;           
+    color: white;
+    font-size: 14px;
+}
+
+.place_name{
+    font-size: 16px; color: #333333; font-weight: bold;
+}
+
+
+.title{
+    font-size: 18px; font-weight: bold; margin-top: 50px;
+}
+
+.gubun{
+    font-size: 11px; color: #707070;
+}
+
+.adress{
+    font-size: 13px; color: #999999; font-weight: bold;
+}
+
+.star{
+    background-color: #FFCB15; padding: 0 7px; height: 16px; font-size: 12px; text-align: center; border-radius: 5px;
+}
+
+.text1{
+    color: #797979; text-decoration: none;
+}
+
+.img1 {
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.sub-search, .map-container {
+    width: 1240px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sub-search input, .map {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.map {
+    height: 496px;
+    margin-top: 20px;
+    margin-bottom: 180px;
+    background-image: url(/img/mapex.PNG);
+    background-size: cover;
+    background-position: center;
+}
+
+footer {
+    height: 332px;
+    background-color: #F2F2F2;
+    padding: 50px;
+}
+
+@media (max-width: 767px) {
+    .nav-link {
+        margin-right: 0;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .sub-search input, .map {
+        height: auto;
+    }
+
+    .btn1, .btn2 {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+
+}
