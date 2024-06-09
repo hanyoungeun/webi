@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>map</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        @import url(map.css);
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!--로고-->
+        <nav class="navbar" style="height: 67px; background-color: white;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/logo.png" alt="Logo" width="86" height="35" class="d-inline-block align-text-top">
+                </a>
+            </div>
+        </nav>
+
+        <!--네비게이션-->
+        <nav class="navbar navbar-expand-lg" style="border-bottom: solid 2px; background-color: white;">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">테마</a>
+                        <a class="nav-link" href="#">지역</a>
+                        <a class="nav-link" href="#">지도</a>
+                        <a class="nav-link" href="#">마이페이지</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!--검색창-->
+        <nav class="navbar" style="margin: 15px 0; background-color: white;">
+            <div class="sub-search">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="지역명 검색 예) 서울, 서초구" aria-label="Search">
+                </form>
+            </div>
+        </nav>
+
+        <!--서브메뉴-->
+        <div class="grid text-center" style="float:left; margin-top: 10px;">
+            <div class="g-col-4">
+                <button type="button" class="btn1">주변 명소</button>
+            </div>
+            <div class="g-col-4">
+                <button type="button" class="btn1">주변 음식점</button>
+            </div>
+            <div class="g-col-4">
+                <button type="button" class="btn_click">주차장/화장실</button>
+            </div>
+        </div>
+
+        <div class="clear"></div>
+
+        <!--주변 인기명소-->
+        <div>
+            <div style="margin-left: 20px;">
+                <p class="title">주변 시설</p>
+                <button type="button" class="btn2_click">주차장</button>
+                <button type="button" class="btn2">화장실</button>
+            </div>
+            <div style="margin-left: 20px; float: left;">
+                <img src="./img/명소.jpg" width="280px" height="188px" class="img1">
+                <p style="margin-top: 15px;">
+                    <span class="gubun">구분</span><br>
+                    <span class="place_name">명소 이름</span><br>
+                    <span class="adress">주소</span><br>
+                    <span class="star"><b>★ 9.8</b></span>
+                    <span style="font-size: 12px; color: #707070;"><b>100명 평가</b></span>
+                </p>
+            </div>
+            <div style="margin-left: 20px; float: left;">
+                <img src="./img/명소.jpg" width="280px" height="188px" class="img1">
+                <p style="margin-top: 15px;">
+                    <span class="gubun">구분</span><br>
+                    <span class="place_name">명소 이름</span><br>                   
+                    <span class="adress">주소</span><br>
+                    <span class="star"><b>★ 9.8</b></span>
+                    <span style="font-size: 12px; color: #707070;"><b>100명 평가</b></span>
+                </p>
+            </div>
+            <div style="margin-left: 20px; float: left;">
+                <img src="./img/명소.jpg" width="280px" height="188px" class="img1">
+                <p style="margin-top: 15px;">
+                    <span class="gubun">구분</span><br>                    
+                    <span class="place_name">명소 이름</span><br>
+                    <span class="adress">주소</span><br>
+                    <span class="star"><b>★ 9.8</b></span>
+                    <span style="font-size: 12px; color: #707070;"><b>100명 평가</b></span>
+                </p>
+            </div>
+        </div>
+
+        <div class="clear"></div>
+
+        <!--서브 검색-->
+        <div class="sub-search" style="margin-top: 80px;">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="키워드 검색" aria-label="Search">
+            </form>
+        </div>    
+        <!--지도화면-->
+        <div class="map-container">
+            <div class="map"></div>
+        </div>
+
+        <footer>
+            <p style="font-size: 18px; font-weight: bold;">고객센터</p>
+            <p style="font-size: 13px;">오전 9시 ~ 오후 6시 운영</p>
+            <p style="font-size: 11px; line-height: 2em;">
+                (주)르티 <br>
+                주소 : 서울특별시 강남구 봉은사로 479, 479타워 11층 | 대표이사 : 정명훈 | 사업자등록번호 : 742-86-00224사업자정보확인 <br>
+                전자우편주소 : help@yeogi.com | 통신판매번호 : 2017-서울강남-01779 | 관광사업자 등록번호 : 제1026-24호 | 전화번호 : 1670-6250 | 호스팅서비스제공자의 상호 표시 : (주)여기어때컴퍼니 <br>
+                (주)여기어때컴퍼니는 통신판매중개자로서 통신판매의 당사자가 아니며, 상품의 예약, 이용 및 환불 등과 관련한 의무와 책임은 각 판매자에게 있습니다. <br>
+            </p>
+            <div class="info">
+                <a href="#" class="text1">이용약관</a>
+                <a href="#" style="color: #2F2F2F; text-decoration: none;">개인정보처리방침</a>
+                <a href="#" class="text1">소비자 분쟁해결 기준</a>
+                <a href="#" a href="#" class="text1">콘텐츠산업진흥법에 의한 표시</a>
+            </div>
+            <p style="font-size: 13px; color: #797979;">Copyright GC COMPANY Corp. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-qsXVoTHlUHvPfgUJAiio/Oy+Nfj/ZYkBZvVbhVT9hI0Lq5LyVFwqpSZGBXbg/eL" crossorigin="anonymous"></script>
+</body>
+</html>
