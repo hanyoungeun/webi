@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my page2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">    
+    <style>
+      body {
+       margin: 0;
+       padding: 0;
+       font-family: "Noto Sans KR", sans-serif;
+      }
+      a {text-decoration: none;}
+      a:link {color: rgb(0, 0, 0)}
+      a:visited {color: rgb(0, 0, 0)}
+      hr {
+       margin-top: 30px;
+       border: none;
+       border-top: 2px solid #ccc;
+      }
+      
+      .all {
+        width: 1280px;
+        margin: 0 auto;
+      }
+      .top {
+        width: 1240px;
+        padding: 20px 20px 0 20px;
+      }
+      .logo {
+        width: 70px;
+      }
+      nav {
+        width: 1240px;
+        padding: 20px;
+      }
+      nav ul {
+        margin: 0; 
+        padding: 0;
+      }
+      nav li {
+        list-style: none;
+        margin-right: 100px;
+        float: left;
+        font-size: 16px;
+        font-weight: bolder;
+      }
+      .profile {
+        width: 1280px;
+        padding-top: 80px;
+        display: flex;
+      }
+      .circle {
+        width: 150px;
+        height: 150px;
+        background-color: #eea88d;
+        border-radius: 50%;
+        margin-right: 80px;
+       }
+       .profile-textall {
+        width: 500px;
+        height: 150px;
+       }
+       .profile-text {
+        width: 500px;
+        font-size: 16px;
+        font-weight: bolder;
+        float: left;
+        margin-top: 50px;
+        height: 80px;
+       }
+       .profile a {
+        font-size: 12px;
+        float: left;
+        height: 50px;
+        margin-right: 30px;
+       }
+       .modify {
+        width: 1280px;
+        height: 200px;
+        padding-top: 65px;
+        padding-bottom: 65px;
+       }
+       .modify-box1 {
+        width: 605px;
+        float: left;
+        margin-right: 70px;
+       }
+       .modify-box2 {
+        width: 605px;
+        float: left;
+       }
+       .input-container {
+        width: 605px;  
+        margin-bottom: 30px;
+        float: left;
+        display: flex;
+       }
+       .input-label {
+        font-size: 14px;
+        margin-right: 30px;
+       }
+       .input-text {
+        border: none;
+        background-color: #f0f0f0;
+        padding: 5px;
+        width: 500px;
+        }
+        .mylist {
+            width: 1280px;
+            margin-bottom: 100px;
+        }
+        .box-all {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;   
+        }
+        .box {
+        width: 89px;
+        height: 125px;
+        border-radius: 20px;
+        float: left;
+        background-color: #f0f0f0;
+        }
+
+        footer {
+            height: 332px;
+            background-color: #F2F2F2;
+            padding: 50px;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="all">
+            <!--상단 로고-->
+            <div class="top">
+                <a href="#"><img src="logo.png" alt="logo" class="logo"></a>
+            </div>
+
+            <!--상단 메뉴-->
+            <nav class="top-nav">
+                <ul>
+                    <li><a href="#">테마</a></li>
+                    <li><a href="#">지역</a></li>
+                    <li><a href="#">지도</a></li>
+                    <li><a href="#">마이페이지</a></li>
+                </ul>
+            </nav>
+            <hr>
+
+            <!--프로필-->
+            <div class="profile">
+                <div class="circle"></div>
+                <div class="profile-textall">
+                <div class="profile-text">name 님 환영합니다!</div>
+                <a href="#">내 정보 관리 ></a>
+                <a href="#">최근 본 게시물 ></a>
+                <a href="#">내가 쓴 글/댓글 ></a>
+                </div>
+            </div>
+
+            <!--내 정보 수정-->
+            <div class="modify">
+                <p style="font-size: 16px; font-weight: bold;">내 정보 수정</p>
+                <div class="modify-box1">
+                <div class="input-container">
+                    <label for="name" class="input-label">이&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;름 :</label>
+                    <input type="text" id="name" name="name" class="input-text">
+                    </div>
+                <div class="input-container">
+                    <label for="nickname" class="input-label">닉&nbsp;&nbsp;네&nbsp;&nbsp;임 :</label>
+                    <input type="text" id="nickname" name="nickname" class="input-text">
+                    </div>
+                <div class="input-container">
+                    <label for="phone" class="input-label">전화번호 :</label>
+                    <input type="text" id="phone" name="phone" class="input-text" oninput="validatePhoneNumber(this)">
+                </div>
+                </div>
+                <div class="modify-box2">
+                <div class="input-container">
+                    <label for="e-mail" class="input-label">이&nbsp;&nbsp;메&nbsp;&nbsp;일 :</label>
+                    <input type="text" id="e-mail" name="e-mail" class="input-text">
+                    </div>
+                <div class="input-container">
+                    <label for="id" class="input-label">아&nbsp;&nbsp;이&nbsp;&nbsp;디 :</label>
+                    <input type="text" id="id" name="id" class="input-text">
+                    </div>
+                <div class="input-container">
+                    <label for="password" class="input-label">비밀번호 :</label>
+                    <input type="password" id="password" name="password" class="input-text">
+                    </div>
+                </div>
+            </div>
+            
+            <!--친구 목록-->
+            <div class="mylist">
+                <p style="font-size: 16px; font-weight: bold;">친구 목록</p>
+                <div class="box-all">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            </div>
+            
+            <!--footer-->
+            <footer>
+                <p style="font-size: 18px; font-weight: bold;">고객센터</p>
+                <p style="font-size: 13px;">오전 9시 ~ 오후 6시 운영</p>
+                <p style="font-size: 11px; line-height: 2em;">
+                    (주)르티 <br>
+                    주소 : 서울특별시 강남구 봉은사로 479, 479타워 11층 | 대표이사 : 정명훈 | 사업자등록번호 : 742-86-00224사업자정보확인 <br>
+                    전자우편주소 : help@yeogi.com | 통신판매번호 : 2017-서울강남-01779 | 관광사업자 등록번호 : 제1026-24호 | 전화번호 : 1670-6250 | 호스팅서비스제공자의 상호 표시 : (주)여기어때컴퍼니 <br>
+                    (주)여기어때컴퍼니는 통신판매중개자로서 통신판매의 당사자가 아니며, 상품의 예약, 이용 및 환불 등과 관련한 의무와 책임은 각 판매자에게 있습니다. <br>
+                </p>
+                <div class="info">
+                    <a href="#" style="color: #797979; text-decoration: none;">이용약관</a>
+                    <a href="#" style="color: #2F2F2F; text-decoration: none;">개인정보처리방침</a>
+                    <a href="#" style="color: #797979; text-decoration: none;">소비자 분쟁해결 기준</a>
+                    <a href="#" style="color: #797979; text-decoration: none;">콘텐츠산업진흥법에 의한 표시</a>
+                </div>
+                <p style="font-size: 13px; color: #797979;">Copyright GC COMPANY Corp. All rights reserved.</p>
+            </footer>
+        </div>
+        </div>
+    </body>
+</html>
