@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        li{float: left; width: 100px; list-style: none;}
+        #logo{
+            float: left;
+        }
+        #user_interface{
+            float: right;
+            height: 45px;
+            width: 100px;
+            overflow: hidden;
+        }
+        #nav{
+            clear: right;
+            height: 27px;
+        }
+        h4,h5,h6,p{text-decoration: none; padding: 0; margin: 0; display: inline;}
+        hr{margin: 0; padding: 0;}
+
+        #resultDiv{
+            width: 1278px;
+            height: 221px;
+            overflow: hidden;
+            
+        }
+        #postImg{
+            width: 170px;
+            height: 170px;
+            float: left;
+        }
+        #resultInfo{
+            float: left;
+            width: 174px;
+            height: 103px;
+        }
+        #resultInfo:last-child{
+            margin: 0;
+        }
+        #resultInfo_score{
+            float: left;
+        }
+        #postHr{
+            clear: left;
+            position: relative;
+            top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="logo">
+        <img src="logo.png" width="86px" height="35px">
+    </div>
+    <div id="user_interface">
+        <img src="default.png" width="45px" height="45px">
+        <p style="font-size: 16px; float: right;">로그인</p>
+        <!--현재는 default 값!! 유저 프로필 사진은 파이어베이스에서 가져와야함! (수정필요)-->
+    </div>
+    <br>
+    <div id="nav">
+        <ul>
+            <li>테마</li>
+            <li>지역</li>
+            <li>지도</li>
+            <li>마이페이지</li>
+        </ul>
+    </div>
+    <hr>
+    <br>
+    <div id="inputDiv">
+        <form>
+            <input type="text" name="search_field" placeholder="지역명 검색 예&#41; 서울, 서초구">
+            <br>
+            <div id=input_select>
+                <select name="select_place">
+                    <option value="위치">항목1</option>
+                    <option value="위치">항목2</option>
+                    <option value="위치" selected hidden>선택하기</option>
+                    <!--데이터 파싱 후 사이클 시켜줘야 함 코드수정필요-->
+                    <!--시, 도 데이터 파싱해와야할듯-->
+                </select>
+                <select name="select_period">
+                    <option value="기간">항목1</option>
+                    <option value="기간">항목2</option>
+                    <option value="기간" selected hidden>선택하기</option>
+                    <!--데이터 파싱 후 사이클 시켜줘야 함 코드수정필요-->
+                    <!--캘린더에서 선택할 수 있게 코드 수정-->
+                </select>
+                <select name="select_people">
+                    <option value="인원">1</option>
+                    <option value="인원">2</option>
+                    <option value="인원">3</option>
+                    <option value="인원">4</option>
+                    <option value="인원">5</option>
+                    <option value="인원">6</option>
+                    <option value="인원">7</option>
+                    <option value="인원">8</option>
+                    <option value="인원" selected hidden>선택하기</option>
+                    <!--데이터 파싱 후 사이클 시켜줘야 함 코드수정필요-->
+                    <!--select 시도 여행기간 인원수 어떻게 처리해야할지?-->
+                </select>
+            </div>
+            <br>
+            <input type="checkbox" name="search_type" value="festival">축제, 행사
+            <input type="checkbox" name="search_type" value="foodstore">음식점
+            <input type="checkbox" name="search_type" value="pothozone">사진스팟
+            <input type="checkbox" name="search_type" value="hotel">숙소
+        </form>
+    </div>
+    <br>
+    <div id="resultDiv">
+        <img id="postImg" src="defaultImg.png" width="170px" height="170px">
+        <div id="resultInfo">
+            <h4>여행지</h4><br>
+            <h5>#여행테마</h5><br>
+            <h5>서울 종로구</h5><br>
+                <div id="resultInfo_score">
+                    <h6>★9.8</h6><h6>n명 평가</h6>
+                </div>
+        </div>
+        <hr id="postHr"> 
+    </div>
+    <div id="resultDiv">
+        <img id="postImg" src="defaultImg.png" width="170px" height="170px">
+        <div id="resultInfo">
+            <h4>여행지</h4><br>
+            <h5>#여행테마</h5><br>
+            <h5>서울 종로구</h5><br>
+                <div id="resultInfo_score">
+                    <h6>★9.8</h6><h6>n명 평가</h6>
+                </div>
+        </div>
+        <hr id="postHr"> 
+    </div>
+
+    <div id="info">
+        <!--info text 삽입-->
+    </div>
+</body>
+</html>
+
+
+<!-- 디자인통일, resultDiv 요소 vertical 중앙 정렬하는 법....?, 장소, 날짜, 인원 select 어떻게 할지  -->
+
