@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>theme</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        .layout {
+            width: 1240px;
+            margin: 0 auto;
+            padding: 0 20px 0 20px;
+        }
+
+        .navbar {
+            width: 1240px;
+            height: 40px;
+            margin: 0 0 10px 0;
+        }
+        
+        .navbar2 {
+            width: 1240px;
+            height: 50px;
+            margin: 0 0 30px 0;
+            border-bottom: solid 2px lightgray;
+        }
+
+        .navbar2-nav {
+            width: 1140px;
+            height: 30px;
+            padding: 15px 50px 0 50px;
+        }
+
+        .navbar2-text {
+            font-weight: bold;
+            margin: 0 80px 0 0;
+        }
+
+        a { text-decoration: none; }
+            a:link { color: black;}
+            a:visited { color: black;}
+            a:hover { color: black;}
+
+        .navbar3 {
+            width: 1240px;
+            height: 40px;
+            margin: 0 0 50px 0;
+        }
+        
+        .search {
+            width: 700px;
+            height: 40px;
+            background-color: white;
+            border: solid 1px lightgrey;
+            border-radius: 20px;
+            line-height: 40px;
+        }
+
+        .search-text {
+            width: 700px;
+            padding: 0 0 0 30px;
+            font-size: 12px;
+            color: gray;
+        }
+
+        .theme-title {
+            width: 1240px;
+            height: 50px;
+            margin: 0 0 15px 0;
+            border-bottom: solid 2px lightgray;
+        }
+        
+        .theme {
+            width: 1240px;
+            height: 30px;
+            margin: 0 0 20px 0;
+            overflow: hidden;
+        }
+
+        .theme-category {
+            height: 20px;
+            margin: 0 7px 0 0;
+            line-height: 20px;
+            border: solid 1px black;
+            border-radius: 20px;
+            font-size: 10px;
+            text-align: center;
+            float: left;
+        }
+        .theme-sort {
+            font-size: 10px;
+            text-align: right;
+            color: grey;
+        }
+
+        .place {
+            width: 1240px;
+            height: 200px;
+            background-color: white;
+            border-bottom: solid 2px lightgray;
+            overflow: hidden;
+        }
+
+        .place-img {
+            width: 150px;
+            height: 150px;
+            margin: 25px 30px 0 0;
+            background-color: lightgrey;
+            border-radius: 20px;
+            line-height: 200px;
+            float: left;
+        }
+
+        .place-name {
+            height: 150px;
+            margin: 25px 0 25px 0;
+            float: left;
+        }
+
+        .footer-bar {
+            width: 1160px;
+            height: 310px;
+            padding: 40px;
+            background-color: rgb(234, 234, 234);
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <nav class="navbar" >
+            <div class="navbar-logo">
+                <a class="logo-img" href="#">
+                    <img src="./img/logo.png" alt="logo" height="40"">
+                </a>
+            </div>
+        </nav>
+
+        <nav class="navbar2">
+            <div class="navbar2-nav">
+                <a class="navbar2-text" href="#">테마</a>
+                <a class="navbar2-text" href="#">지역</a>
+                <a class="navbar2-text" href="#">지도</a>
+                <a class="navbar2-text" href="#">마이페이지</a>
+            </div>
+        </nav>
+
+        <nav class="navbar3">
+            <div class="search">
+                <div class="search-text">
+                지역명 검색 예) 서울, 서초구
+                </div>
+            </div>
+        </nav>
+
+        <div class="theme-title">
+            <h2># 가족 여행</h2>
+        </div>
+
+        <div class="theme">
+            <div class="theme-category" style="width: 80px;">
+                # 관광 여행
+            </div>
+            <div class="theme-category" style="width: 80px;">
+                # 휴양 여행
+            </div>
+            <div class="theme-category" style="width: 80px;">
+                # 가족 여행
+            </div>
+            <div class="theme-category" style="width: 90px;">
+                # 캠핑/글램핑
+            </div>
+            <div class="theme-category" style="width: 120px;">
+                # 페스티벌/공연/행사
+            </div>
+            <div class="theme-category" style="width: 120px;">
+                # 반려동물 동반 여행
+            </div>
+            <div class="theme-sort">
+                최신순&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp인기순
+            </div>
+        </div>
+
+        <div class="place">
+            <div class="place-img">
+                <img scr="" alt="">
+            </div>
+            <div class="place-name">
+                <div class="place-text" style="font-size: 15px; margin: 0 0 5px 0;">여행지</div>
+                <div class="place-text" style="font-size: 12px;"># 여행 테마</div>
+                <div class="place-text" style="font-size: 12px;">서울 종로구</div>
+            </div>
+        </div>
+
+        <div class="place">
+            <div class="place-img">
+                <img scr="" alt="">
+            </div>
+            <div class="place-name">
+                <div class="place-text" style="font-size: 15px; margin: 0 0 5px 0;">여행지</div>
+                <div class="place-text" style="font-size: 12px;"># 여행 테마</div>
+                <div class="place-text" style="font-size: 12px;">서울 종로구</div>
+            </div>
+        </div>
+
+        <div class="place">
+            <div class="place-img">
+                <img scr="" alt="">
+            </div>
+            <div class="place-name">
+                <div class="place-text" style="font-size: 15px; margin: 0 0 5px 0;">여행지</div>
+                <div class="place-text" style="font-size: 12px;"># 여행 테마</div>
+                <div class="place-text" style="font-size: 12px;">서울 종로구</div>
+            </div>
+        </div>
+
+        <div class="place">
+            <div class="place-img">
+                <img scr="" alt="">
+            </div>
+            <div class="place-name">
+                <div class="place-text" style="font-size: 15px; margin: 0 0 5px 0;">여행지</div>
+                <div class="place-text" style="font-size: 12px;"># 여행 테마</div>
+                <div class="place-text" style="font-size: 12px;">서울 종로구</div>
+            </div>
+        </div>
+
+        <div class="place" style="margin: 0 0 100px 0;">
+            <div class="place-img">
+                <img scr="" alt="">
+            </div>
+            <div class="place-name">
+                <div class="place-text" style="font-size: 15px; margin: 0 0 5px 0;">여행지</div>
+                <div class="place-text" style="font-size: 12px;"># 여행 테마</div>
+                <div class="place-text" style="font-size: 12px;">서울 종로구</div>
+            </div>
+        </div>
+
+        
+        <footer class="footer-bar">
+            <h4 style="color:black;">고객센터</h4>
+            <h5 style="color:gray;">오전 9시 - 오후 6시 운영</h5>
+            <p style="color:gray; font-size: 12px;">(주)르티</p>
+            <p style="color:gray; font-size: 12px;">주소 : 서울특별시 강남구 봉은사로 479, 479타워 11층 | 대표이사 : 정명훈 | 사업자등록번호 : 742-86-00224사업자정보확인</p>
+            <p style="color:gray; font-size: 12px;">전자우편주소 : help@yeogi.com | 통신판매번호 : 2017-서울강남-01779 | 관광사업자 등록번호 : 제1026-24호 | 전화번호 : 1670-6250 | 호스팅서비스제공자의 상호 표시 : (주)여기어때컴퍼니<p>
+            <p style="color:gray; font-size: 12px;">(주)여기어때컴퍼니는 통신판매중개자로서 통신판매의 당사자가 아니며, 상품의 예약, 이용 및 환불 등과 관련한 의무와 책임은 각 판매자에게 있습니다.</p>
+            <h5 style="color:gray; font-size: 12px;">이용약관   개인정보처리방침   소비자 분쟁해결 기준   콘텐츠산업진흥법에 의한 표시</h5>
+            <h5 style="color:gray; font-size: 12px;">Copyright GC COMPANY Corp. All rights reserved.</h5>
+        </footer>
+
+    </div>
+</body>
+</html>
